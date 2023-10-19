@@ -1,4 +1,3 @@
-// reducers/noteReducer.js
 import {
   NOTE_ADD_REQUEST,
   NOTE_ADD_SUCCESS,

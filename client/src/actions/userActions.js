@@ -7,12 +7,8 @@ import {
     USER_SIGNUP_SUCCESS,
     
   } from "../constants/userConstants";
-  import { useNavigate } from "react-router-dom";
   import axios from "axios";
-  // import { useNavigate } from "react-router-dom";
-
   export const login = (email, password) => async (dispatch) => {
-    // const navigate = useNavigate();
     try {
       dispatch({ type: USER_LOGIN_REQUEST });
   
@@ -30,8 +26,7 @@ import {
   
       dispatch({ type: USER_LOGIN_SUCCESS, payload: data });
   
-      localStorage.setItem("token", data.token); // You should specify a key for localStorage
-      // navigate("/");
+      localStorage.setItem("token", data.token);
     } catch (error) {
       dispatch({
         type: USER_LOGIN_FAIL,

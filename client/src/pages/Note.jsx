@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { TextField, Button } from "@mui/material";
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
-import DOMPurify from 'dompurify'; // Import DOMPurify
+import DOMPurify from 'dompurify'; 
 import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css'; // Import the Quill editor's styles
-// import { useNavigate, useParams } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux'; // Import useSelector and useDispatch
+import 'react-quill/dist/quill.snow.css'; 
+
+import { useSelector, useDispatch } from 'react-redux'; 
 import { updateNote } from '../actions/noteActions'; 
 
 export const Note = () => {

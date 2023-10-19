@@ -23,15 +23,13 @@ function App() {
     backgroundColor: "#eeeeee"}}
 >
         <Router>
-            {/* <TopBar /> */}
             <Routes>
                 <Route path={"/"} element={<HomePage />} />
                 <Route path={"/createnote"} element={<CreateNote />} />
                 <Route path={"/notes/:noteId"} element={<Note />} />
                 <Route path={"/signup"} element={<SignUp />} />
                 <Route path={"/login"} element={<Login />} />
-                <Route path={"/readnote/:noteId"} element={<Readnote/>}/>
-                {/* <Route path={"/note/:id"} element={<Note />} /> */}                
+                <Route path={"/readnote/:noteId"} element={<Readnote/>}/>             
             </Routes>
         </Router>
 </div>

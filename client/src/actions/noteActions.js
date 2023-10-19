@@ -1,4 +1,3 @@
-// actions/noteActions.js
 import axios from "axios";
 import {
   NOTE_ADD_REQUEST,
